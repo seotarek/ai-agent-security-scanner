@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ai-agent-security-scanner"
+version = "0.1.0"
+description = "Lightweight prompt injection and LLM agent vulnerability detection engine"
+authors = [{ name = "Tarek Mohamed", email = "contact@tarek-mohamed.me.eg" }]
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+keywords = ["ai-safety", "prompt-injection", "llm-security", "owasp-llm", "mcp-guard"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Security",
+]
+
+[project.scripts]
+agent-scan = "scanner.cli:main"
